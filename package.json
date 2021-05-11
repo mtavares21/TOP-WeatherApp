@@ -1,0 +1,36 @@
+{
+  "name": "top-weatherapp",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "code dist | code src | npx webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtavares21/TOP-WeatherApp.git"
+  },
+  "keywords": [
+    "weather",
+    "API",
+    "odin"
+  ],
+  "author": "Miguel Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtavares21/TOP-WeatherApp/issues"
+  },
+  "homepage": "https://github.com/mtavares21/TOP-WeatherApp#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-webpack-plugin": "^2.5.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "rango-dropdownmenu": "^1.0.0"
+  }
+}

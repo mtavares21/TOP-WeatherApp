@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="allWrapper">
+        <header>
+            <h1 class="name">Stormy Weather</h1>
+            <form autocomplete="off">
+                <ul id="dropNav" class="dropNav">
+                    <div class="dropContain">
+                        <input id="city" class="dropTrigger" aria-haspopup="true" type="text" placeholder="City"
+                            onfocus="this.placeholder =''" onblur="this.placeholder = 'City'"></input>
+                        <ul id="dropList" class="dropList" aria-label="submenu">
+
+                        </ul>
+                    </div>
+                </ul>
+            </form>
+        </header>
+        <main>
+            <h2 id=cityName> London, GB</h2>
+            <section>
+                <h3>Today</h3>
+                <div class="detailsWrap">
+                    <div class="details">
+                        <div class="iconTemp">
+                            <strong id="temp">19°</strong>
+                            <figure>
+                                <img id="icon" class="icon" src="http://openweathermap.org/img/wn/10d@2x.png"
+                                    width="70px" height="70px">
+                            </figure>
+                        </div>
+                        <div class="feelWrap">
+                            <h5 id="feel" class="feels">Feels like 14.97°</h5>
+                            <h4 id="description" class="description"> Overcast clouds</h4>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <dl>
+                            <div>
+                                <dt>Snow:</dt>
+                                <dd id="snow">72</dd>
+                            </div>
+                            <div>
+                                <dt>Rain:</dt>
+                                <dd id="rain">16.67</dd>
+                            </div>
+                            <div>
+                                <dt>Press.:</dt>
+                                <dd id="press">14.77</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="details">
+                        <dl>
+                            <p>Wind</p>
+                            <div>
+                                <dt>deg:</dt>
+                                <dd id="deg">230</dd>
+                            </div>
+                            <div>
+                                <dt>speed:</dt>
+                                <dd id="speed">2.06</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <dl class="sectionFooter">
+                        <div>
+                            <dt>Humidity:</dt>
+                            <dd id="humi">72</dd>
+                        </div>
+                        <div>
+                            <dt>Temp.max:</dt>
+                            <dd id="max">16.67</dd>
+                        </div>
+                        <div>
+                            <dt>Temp.min:</dt>
+                            <dd id="min">14.77</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section class="forecast">
+                <h3>Forecast</h3>
+                <div class="columnWrap">
+
+                    <table class="tg">
+                        <thead>
+                            <tr>
+                                <th class="tg-0pky" colspan="8">Days</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="9" id="rowHead"> Hours</td>
+                                <td class="tg-0lax-0"></td>
+                                <td class="tg-0lax-h">11</td>
+                                <td class="tg-0lax-h">12</td>
+                                <td class="tg-0lax-h">13</td>
+                                <td class="tg-0lax-h">14</td>
+                                <td class="tg-0lax-h">15</td>
+                                <td class="tg-0lax-h">16</td>
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">00:00</td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">03:00</td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">06:00</td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">09:00</td>
+                              <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">12:00</td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">15:00</td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">18:00</td>
+                             <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="tg-0lax-0">21:00</td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                            <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                               <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+                                <td class="tg-0lax">
+                                    <div class="tg-wrap">
+                                        <figure>
+                                            <img class="tg-icon" class="icon"
+                                                src="http://openweathermap.org/img/wn/10d@2x.png" width="50px"
+                                                height="50px">
+                                        </figure>
+                                        <p class="tg-temp">13.52°</p>
+                                        <p class="tg-rain">Rain: 13mm/h</p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js" type="text/javascript">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+/* By order of apperance (not a id's first)*/
+.allWrapper{
+display: flex;
+justify-content: center;
+width: 100%;
+flex-wrap: wrap;
+}
+header{
+width: 70vw;
+min-width: 700px;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+}
+.name{
+font-family: 'Roboto Mono', monospace;
+width: 130px;
+height: 70px;
+font-size: 25px;
+border: 5px solid;
+padding-left: 5px;
+margin: 0 !important;
+color:rgb(41, 32, 32)
+}
+form{
+display: flex;
+width: 300px;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-content: flex-end;
+}
+input{
+appearance: none;
+border-style: none;
+background-color: rgb(200,200,200,0);
+}
+.dropTrigger:focus{
+appearance: none;
+outline-style: none;
+}
+button{
+appearance: none;
+border: 1px solid rgb(41, 32, 32);
+border-radius: 5px;
+height: 25px;
+font-family: 'Roboto Mono', monospace;
+margin: 0;
+color: rgb(41, 32, 32);
+}
+h2{
+font-family: 'Roboto Mono', monospace;
+font-size: 30px;
+width: 100%;
+margin-top: 50px;
+}
+section{
+font-family: 'Roboto Mono', monospace;
+color: white;
+background-color: rgb(41, 32, 32);
+border: 1px solid;
+border-radius: 10px;
+width: 64vw;
+height:18vw;
+min-height: 220px;
+min-width: 650px;
+margin:20px 0; 
+padding: 3vw;
+display:flex;
+flex-wrap: wrap;
+flex-direction:row;
+align-content: center;
+}
+h3{
+display: flex;
+font-size: 25px;
+width: 100%;
+margin:0;
+}
+div{
+display: flex;
+flex-wrap: nowrap;
+}
+.detailsWrap{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+align-content: flex-start;
+width: 100%;
+}
+.details{
+margin: 0 40px;
+width: 20vw;
+display: flex;
+flex-wrap: wrap;
+}
+.details dl{
+display: flex;
+flex-wrap: wrap;
+align-content: space-around;
+width: 135px;
+}
+.details dd{
+display: flex;
+margin: 0;
+margin-left: 10px;
+width: 100%;
+}
+.details dt{
+display: flex;
+margin:0;
+margin-left: 5px;
+width: fit-content;
+}
+.details p{
+margin:0;
+margin-right: 100%;
+}
+.details .feelWrap{
+display: flex;
+width: 230px;
+flex-wrap: wrap;
+}
+figure{
+margin:0;
+}
+.iconTemp{
+display: flex;
+flex-wrap: nowrap;
+align-content: start;
+justify-content: space-between;
+width: fit-content;
+}
+strong{
+padding-top: 5px;
+font-size: 50px;
+margin:0;
+}
+h5{
+margin:0;
+}
+h4{
+margin: 10px 0;
+}
+.sectionFooter{
+display: flex;
+flex-direction: row;
+justify-self: center;
+justify-content: space-evenly;
+width: 64vw;
+min-width: 650px;
+margin-top: 30px;
+}
+.sectionFooter div{
+width: 20vw;
+display: flex;
+justify-content: center;
+}
+.sectionFooter dd{
+margin: 0;
+margin-left: 10px;
+}
+.results{
+display: flex;
+justify-self: center;
+margin: 0px;
+margin-bottom: 5px;
+text-align: start;
+font-size: 13px;
+}
+.drop{
+padding-bottom: 5px;
+}
+.forecast{
+height: 700px;
+display: flex;
+justify-content: center;
+align-content: flex-start;
+}
+.tg{
+border-collapse:collapse;
+border-spacing:0;
+border-color:rgb(238, 232, 232);
+font-family: 'Roboto Mono', monospace;
+font-size: 12px;
+margin: 20px;
+}
+.tg td{
+border:1px solid;
+font-family:Arial, sans-serif;
+font-size:12px;
+overflow:hidden;
+width: 70px;
+word-break:normal;
+font-family: 'Roboto Mono', monospace;
+text-align: center;
+}
+.tg .tg-wrap{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: space-around;
+width: 100px;
+padding-bottom: 5px;
+}
+.tg td p{
+margin:0;
+padding: 0;
+}
+.tg .tg-temp{
+font-size: 12px;
+font-weight: 150%;
+}
+.tg th{
+border: 1px solid rgb(238, 232, 232);
+font-family:Arial, sans-serif;
+font-size:14px;
+font-weight:normal;
+overflow:hidden;
+word-break:normal;
+text-justify: center;
+text-align: center;
+font-family: 'Roboto Mono', monospace;
+}
+.tg .tg-0pky{
+border-color:inherit;
+}
+.tg .tg-0lax-h{
+padding: 0 10px;
+width: 20px;
+font-size: 12px;
+font-family: 'Roboto Mono', monospace;
+}
+.tg #rowHead{
+padding:0;
+width:10px;
+height: 10px;
+font-family: 'Roboto Mono', monospace;
+text-justify: center;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+}
+.tg .tg-0lax-0{
+padding: 2px;
+width: 20px;
+font-size: 12px;
+font-family: 'Roboto Mono', monospace;
+}
