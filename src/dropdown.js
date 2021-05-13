@@ -1,5 +1,5 @@
 import './data';
-import { populate, searchCities } from './display';
+import { forecastPrint, todayPrint, searchCities } from './display';
 // Auto-Complete dropdown
 async function dropDown() {
   const cities = await searchCities();
@@ -44,7 +44,8 @@ async function dropDown() {
     // Select city from dropdown
     const searchResults = Array.from(document.querySelectorAll('.dropItem'));
     searchResults.map((city) => city.addEventListener('click', () => {
-      populate(city.innerText);
+      todayPrint(city.innerText);
+      forecastPrint(city.innerText);
       searchResults.map((item) => item.remove());
       list.style.height = '0';
       list.style.padding = '0';
