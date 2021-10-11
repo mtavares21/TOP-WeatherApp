@@ -1,6 +1,5 @@
 /* eslint-disable no-return-assign */
 import { getData, getHourly } from './data';
-
 import dropDown from './dropdown';
 
 function searchCities() {
@@ -44,10 +43,7 @@ async function todayPrint(city) {
 // Input eventListener activates auto-dropdown
 const input = document.getElementById('city');
 input.addEventListener('input', () => {
-  dropDown().then((v) => {
-    v.removeResults();
-    v.showResults();
-  });
+  dropDown().then((e) => e.showResults());
 });
 async function headerDriver(city) {
   const data = await getHourly(city);

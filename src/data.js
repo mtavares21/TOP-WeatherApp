@@ -1,7 +1,7 @@
 // Get data from openWeather API and return it
 // Input (string): city and unit(imperial, metric)
 async function getData(city, unit) {
-  let data = 'init';
+  let data;
   if (!unit) {
     unit = 'metric';
   }
@@ -14,11 +14,11 @@ async function getData(city, unit) {
     );
     data = await response.json();
   } catch (err) {
-    console.log(err.status);
+    return err.status;
   }
   // list of city and country
   function getCityArray() {
-    if (data.list.length > 0) {
+    if (!!data.list) {
       const cities = data.list.map(
         (item) => `${item.name}, ${item.sys.country}`,
       );

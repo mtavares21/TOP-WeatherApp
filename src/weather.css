@@ -1,4 +1,11 @@
 /* By order of apperance (not a id's first)*/
+body{ 
+background-color: white;
+}
+main{
+padding: 0;
+margin-top: 40px;
+}
 .allWrapper{
 display: flex;
 justify-content: center;
@@ -8,10 +15,11 @@ flex-wrap: wrap;
 header{
 width: 70vw;
 min-width: 700px;
+height: 10vw;
 display: flex;
 flex-wrap: nowrap;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 }
 .name{
 font-family: 'Roboto Mono', monospace;
@@ -21,7 +29,7 @@ font-size: 25px;
 border: 5px solid;
 padding-left: 5px;
 margin: 0 !important;
-color:rgb(41, 32, 32)
+color:rgb(19, 18, 18);
 }
 form{
 display: flex;
@@ -34,10 +42,49 @@ input{
 appearance: none;
 border-style: none;
 background-color: rgb(200,200,200,0);
+color: black;
+}
+.dropContain{
+display: flex;
+width: 170px;
+flex-direction: column;
+}
+.dropTrigger{
+display: flex;
+margin-top: 10%;
+height: 20px;
+color: black;
+font-family: monospace;
+font-size: 15px;
+text-align: center;
+border:1px solid rgb(124, 122, 122);
 }
 .dropTrigger:focus{
 appearance: none;
 outline-style: none;
+}
+.dropList{
+display: none;
+justify-content: center;
+padding: 0;
+align-items: center;
+flex-direction: column;
+border:1px solid rgb(124, 122, 122);
+border-top: 0;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+appearance: none;
+list-style: none;
+font-family: monospace;
+overflow: hidden;
+}
+.dropItem{
+width: 100%;
+text-align: center;
+padding: 2px 0;
+}
+.dropItem:hover{
+background-color: rgb(199, 195, 195);
 }
 button{
 appearance: none;
@@ -52,7 +99,7 @@ h2{
 font-family: 'Roboto Mono', monospace;
 font-size: 30px;
 width: 100%;
-margin-top: 50px;
+margin-top: 0;
 }
 section{
 font-family: 'Roboto Mono', monospace;
